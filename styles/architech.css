@@ -159,6 +159,10 @@ header {
   align-items: center;
 }
 
+.feature-img img{
+  width: 100%;
+}
+
 #btn-badge {
   background-color: #FF900E;
   color: #FFFFFF;
@@ -205,7 +209,7 @@ header {
 
 /* sponsor related style */
 .our-sponsor {
-  width: 1040px;
+  max-width: 1040px;
   margin: 50px auto;
   text-align: center;
 }
@@ -214,12 +218,13 @@ header {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   filter: grayscale(100%);
+  gap: 40px;
 
 }
 /* footer section */
 footer{
   height: 50px;
-  width: 840px;
+  max-width: 840px;
   background-color: bisque;
   margin: 0 auto;
   text-align: center;
@@ -231,13 +236,19 @@ footer{
 
   .navbar,
   .nav-links,
-  .team {
+  .team,
+  .our-sponsor,
+  .some-facts, {
     flex-direction: column;
   }
-
+.our-sponsor{
+  margin-left: 0;
+}
   .team-img-container,
   .fact-container,
-  .sponsor-companies {
+  .sponsor-companies,
+  .fact-container
+   {
     grid-template-columns: repeat(1, 1fr);
   }
 
